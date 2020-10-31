@@ -15,6 +15,7 @@ function App() {
       <div className='navbar'>
         <NavBar />
       </div>
+      <div className='pages'>
       <Route exact path='/'>
         <HomePage />
       </Route>
@@ -27,6 +28,7 @@ function App() {
       <Route path='/Contact'>
         <Contact />
       </Route>
+      </div>
     </main>  );
 }
 
