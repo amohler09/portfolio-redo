@@ -33,7 +33,21 @@
       display: none;
     }
 
-     
+    &:hover {
+      cursor: pointer;
+
+      .title {
+        max-width: 80%;
+        display: block;
+        color: white;
+        position: absolute;
+        text-align: center;
+
+        -webkit-transform: skewY(-30deg) rotate(60deg);
+        -ms-transform: skewY(-30deg) rotate(60deg);
+        transform: skewY(-30deg) rotate(60deg);
+      }
+    } 
   }
 }
 
