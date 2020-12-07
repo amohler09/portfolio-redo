@@ -38,25 +38,16 @@ export default function PastProjects() {
   
   return (
     <div className='projects'>
-      {Projects.map((project, i) => 
-        i % 2 ? (
-          <div>
-            <div className={showDetails ? 'img-cont' : ''} onClick={detailToggle(i)}>
+       {Projects.map((project, i) =>  (
+          <div className={i % 2 ? 'flex' : 'flex reverse'}>
+            <div 
+              className='project-cont' onClick={detailToggle(i)}>
               <img src={project.imgUrl} alt='' />
-              <h2>{project.title}</h2>
+              <h2 className='title'>{project.title}</h2>
             </div>
-            <p className={showDetails === i ? 'details' : ''}>{project.summary}</p>
+            <p className={showDetails === i ? 'details' : 'detail-hide' }>{project.summary}</p>
           </div>
-        ) : (
-          <div>
-            <p className={showDetails === i ? 'details' : ''}>{project.summary}</p>
-            <div className={showDetails ? 'img-cont' : ''} onClick={detailToggle(i)}>
-              <img src={project.imgUrl} alt='' />
-              <h2>{project.title}</h2>
-            </div>
-          </div>
-        )
-      )}
+        ))}
      </div>
   )
 }
