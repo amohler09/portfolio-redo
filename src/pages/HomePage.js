@@ -9,7 +9,7 @@ export default function HomePage() {
       <div className='header'>
         <h1>Amber Mohler</h1>
         <h2>Web Developer (In Training)</h2>
-        <img src={Loading} />
+        <img src={Loading} alt='loading bar' />
       </div>
       <div className='about-me'>
         <p>Hello, and thank you for visiting! I've moved around the country and lived in 10 different places in the last 10 years, but I've recently landed on Tampa, Florida as a stopping ground {`(at least for a while). I love to question everything and figure out how and why things work, which means I spend a lot of time reading, listening to podcasts, or starting an odd project based on something I've just learned (which usually doesn't turn out as planned)`}. I am that person that loves murder mysteries and conspiracy theories, or really any paranormal matter; at least our conversations would never get boring! I am also very passionate about animals and would love to have the opportunity to foster and rehabilitate them in the future. In the meantime, I enjoy spoiling my 8 year old Chiweenie named Boston.</p>

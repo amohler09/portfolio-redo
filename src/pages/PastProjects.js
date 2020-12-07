@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import './PastProjects.scss'
 
-const Placeholder = require('../img/ProfilePicture.JPG')
-
 export default function PastProjects() {
   const [showDetails, setShowDetails] = useState(null);
 
@@ -42,7 +40,7 @@ export default function PastProjects() {
           <div className={i % 2 ? 'flex' : 'flex reverse'} style={showDetails === i ? {padding: '0'} : null}>
             <div 
               className='project-cont' onClick={detailToggle(i)}>
-              <img src={project.imgUrl} alt='' />
+              <img src={project.imgUrl} alt={`${project.title} project`} />
               <h2 className='title'>{showDetails !== i && project.title}</h2>
             </div>
             <p onClick={detailToggle(i)} className={showDetails === i ? 'details' : 'detail-hide' }>{project.summary}</p>
