@@ -1,0 +1,44 @@
+.contact-page {
+  width: 90%;
+  margin: 5% auto;
+  text-align: center;
+  color: white;
+
+  & h1 {
+    font-size: 2.5rem;
+  }
+
+  .flex-cont {
+    width: 100%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    
+    .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #2e465880;
+      width: 30%;
+      padding: 5% 0;
+      border-radius: 5px;
+
+      .fas, .far {
+        font-size: 1.75rem;
+        margin: 3% auto;
+
+      }
+
+      & h3 {
+        margin: 5% auto;
+        font-size: 1.2rem;
+        line-height: 1.25;
+      }
+
+      & p {
+        margin: 2% auto;
+      }
+    }
+  }
+}
