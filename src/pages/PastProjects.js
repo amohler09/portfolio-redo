@@ -34,6 +34,16 @@ export default function PastProjects() {
     },
     {
       imgUrl: require('../img/ProfilePicture.JPG'),
+      title: `This Portfolio Website!`,
+      summary: <div>
+                <a href='https://github.com/amohler09/reducer-todo' target='_blank' rel='noopener noreferrer' >Github Repository</a>
+                <ul>
+                  <li>Features & skills used</li>
+                </ul>
+              </div>
+    },
+    {
+      imgUrl: require('../img/ProfilePicture.JPG'),
       title: `Connie's Cookbook`,
       summary: <div>
                 <a href='https://connies-cookbook.vercel.app/' target='_blank' rel='noopener noreferrer' >Deployed Project Site</a>
