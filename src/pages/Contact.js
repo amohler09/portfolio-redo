@@ -20,14 +20,20 @@ export default function Contact() {
     })
   }
 
-  console.log('template', template)
-  console.log(formData);
-
   const handleSubmit = e => {
     e.preventDefault();
 
     emailjs.send('Contact_Form', template, formData, userID)
-      .then(res => console.log(res))
+      .then(res => { 
+        console.log(res);
+        setFormData({
+          from_name: '',
+          from_email: '',
+          from_phone: '',
+          message: '',
+        })
+        alert('Thank you for your message!')
+      })
       .catch(err => console.log(err))
   }
 
@@ -43,48 +49,45 @@ export default function Contact() {
         <div className='contact'>
           <i class="fas fa-mobile-alt"></i>
           <h3>Phone</h3>
-          <p>Tampa, FL</p>
+          <a href='tel:3213471543'>321-347-1543</a>
         </div>
         <div className='contact'>
           <i class="far fa-paper-plane"></i>
           <h3>Email</h3>
-          <p>Tampa, FL</p>
+          <a href="mailto:amohler09@gmail.com">amohler09@ gmail.com</a>
         </div>
       </div>
       <form onSubmit={handleSubmit}>
-        <label>
-          Name
-        </label>
         <input
           name='from_name' 
           value={formData.from_name}
           onChange={handleChange}
+          placeholder='Name'
+          required='true'
         />
-        <label>
-          Email
-        </label>
         <input
           name='from_email' 
           value={formData.from_email}
           onChange={handleChange}
+          placeholder='Email'
+          type='email'
+          required='true'
         />
-        <label>
-          Phone Number
-        </label>
         <input
           name='from_phone' 
           value={formData.from_phone}
           onChange={handleChange}
+          placeholder='Phone Number'
+          required='true'
         />
-        <label>
-          Message
-        </label>
-        <input
+        <textarea
           name='message' 
-          value={formData.from_message}
+          value={formData.message}
           onChange={handleChange}
+          placeholder='Message'
+          required='true'
         />
-        <button type='submit'>Send</button>
+        <button type='submit' value='Send Message'>Send Message</button>
       </form>
     </div>
   )

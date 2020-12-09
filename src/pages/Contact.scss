@@ -20,14 +20,13 @@
       flex-direction: column;
       justify-content: center;
       background-color: #2e465880;
-      width: 30%;
+      width: 32%;
       padding: 5% 0;
       border-radius: 5px;
 
       .fas, .far {
         font-size: 1.75rem;
         margin: 3% auto;
-
       }
 
       & h3 {
@@ -36,8 +35,49 @@
         line-height: 1.25;
       }
 
-      & p {
-        margin: 2% auto;
+      & a {
+        text-decoration: none;
+        color: white;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: #fcd201a2;
+      }
+    }
+  }
+
+  & form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    & input, textarea {
+      font-family: 'Nunito';
+      font-weight: 400;
+      padding: 2% 3%;
+      margin: 1% 0;
+      background-color: rgba(245, 245, 245, 0.705);
+      border-radius: 5px;
+    }
+
+    & button {
+      width: 50%;
+      margin: 3% auto;
+      padding: 2% 0;
+      background-color: #fcd201a2;
+      color: white;
+      border-radius: 5px;
+      font-family: 'Roboto Slab';
+      font-size: 1.25rem;
+      font-weight: 500;
+
+      &:hover {
+        cursor: pointer;
+        background-color: #2e465842;
+        color: #fcd201;
+        text-transform: uppercase;
+        box-shadow: 0px 0px 10px rgba(245, 245, 245, 0.705);
       }
     }
   }
