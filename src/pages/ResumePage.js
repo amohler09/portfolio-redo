@@ -8,17 +8,17 @@ export default function ResumePage() {
 
   return (
     <div className={`resume-page ${colorToggle ? 'printable' : 'container'}`}>
-      <button className='toggle-btn' onClick={toggleColor}>{colorToggle ? 'Styled Text' : 'Black & White Text'}</button>
+      <button className={colorToggle ? '' : 'toggled-btn'} onClick={toggleColor}>{colorToggle ? 'Back to Styled Text' : 'Black & White Text'}</button>
       <h1>Amber Mohler</h1>
       <div className='resume objective'>
         <h2>Objective</h2>
-        <hr />
+        <hr style={colorToggle ? { backgroundColor: 'black' } : null} />
         <p>Experienced and accomplished individual with an extensive background in problem-solving on a daily basis and working in team-driven environments, seeking an opportunity to utilize and evolve my newly developed Full Stack Engineering skills.</p>
       </div>
     
       <div className='resume experience'>
         <h2>Experience</h2>
-        <hr />
+        <hr style={colorToggle ? { backgroundColor: 'black' } : null} />
         <h3>Frontend Developer, Lee McGhee Roofing</h3>
         <h3>Tampa, Florida — August 2020 - Present</h3>
         <ul>
@@ -32,7 +32,7 @@ export default function ResumePage() {
 
         <h3>Full Stack Engineer, AdaptivApps</h3>
         <h3>Remote — June 2020 - July 2020</h3>
-        <p>AdaptivApps was a stakeholder in an 8 week group project called Lambda Labs (part of Lambda School’s course). My team and I built a real-time messaging application for Angel City Sports, an AdaptivApps’ client, and then integrated the application into their current website. After completing this Labs project, I was hired by AdaptivApps to continue building upon the current codebase (click <a href='https://drive.google.com/file/d/1B4JY_PIulAz9eJG2Sl_kXJMlWo-Ok91N/view' target='_blank' rel='noopener noreferrer'>here</a> to see our final group presentation video, and <a href='https://my.searchlight.ai/amohler09' target='_blank' rel='noopener noreferrer'>here</a> to see my Searchlight profile with peer reviews from my Labs team members).</p>
+        <p>AdaptivApps was a stakeholder in an 8 week group project called Lambda Labs (part of Lambda School’s course). My team and I built a real-time messaging application for Angel City Sports, an AdaptivApps’ client, and then integrated the application into their current website. After completing this Labs project, I was hired by AdaptivApps to continue building upon the current codebase (click <a style={colorToggle ? { color: 'black' } : null} href='https://drive.google.com/file/d/1B4JY_PIulAz9eJG2Sl_kXJMlWo-Ok91N/view' target='_blank' rel='noopener noreferrer'>here</a> to see our final group presentation video, and <a style={colorToggle ? { color: 'black' } : null} href='https://my.searchlight.ai/amohler09' target='_blank' rel='noopener noreferrer'>here</a> to see my Searchlight profile with peer reviews from my Labs team members).</p>
         <p>Once contracted with AdaptivApps, I worked with the current engineers and UX designer on a daily basis to continue building a web application to be used for a virtual version of the Angel City Games (which are usually held in person every year). I continued to code with the  Prismatopia tech stack which included Apollo Server 2, GraphQL, Prisma, Postgres, AWS, and OAuth.</p>
         <p>Our team met every day with our supervisor to distribute tasks and get status updates for ongoing tasks. During my time with AdaptivApps, I accomplished the following:</p>
         <ul>
@@ -90,7 +90,7 @@ export default function ResumePage() {
 
       <div className='resume skills'>
       <h2>Skills</h2>
-      <hr />
+      <hr style={colorToggle ? { backgroundColor: 'black' } : null} />
         <ul>
           <h3>Personal</h3>
           <li>Problem Solving</li>
@@ -123,7 +123,7 @@ export default function ResumePage() {
 
       <div className='resume education'>
         <h2>Education</h2>
-        <hr />
+        <hr style={colorToggle ? { backgroundColor: 'black' } : null} />
         <h3>Lambda School - October 2019 - June 2020</h3>
         <h3>University of Phoenix - 2010 - 2011</h3>
         <h3>Central Dauphin East Senior High School - 2005 - 2009</h3>
