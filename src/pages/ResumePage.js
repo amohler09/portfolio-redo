@@ -3,11 +3,14 @@ import './ResumePage.scss'
 
 export default function ResumePage() {
   return (
-    <div className='resume-page'>
+    <div className='resume-cont'>
       <button>Toggle Printable Version</button>
       <h1>Amber Mohler</h1>
-      <h2>Objective</h2>
-      <p>Experienced and accomplished individual with an extensive background in problem-solving on a daily basis and working in team-driven environments, seeking an opportunity to utilize and evolve my newly developed Full Stack Engineering skills.</p>
+      <div className='resume objective'>
+        <h2>Objective</h2>
+        <p>Experienced and accomplished individual with an extensive background in problem-solving on a daily basis and working in team-driven environments, seeking an opportunity to utilize and evolve my newly developed Full Stack Engineering skills.</p>
+      </div>
+    
       <div className='resume experience'>
         <h2>Experience</h2>
 
@@ -65,7 +68,7 @@ export default function ResumePage() {
           <li>Held bi-weekly meetings with upper-level managers to discuss floor manager production</li>
           <li>Managed time card system and tracked all employee's attendance, time off, sick days & vacation</li>
           <li>Identified service areas for RMG clients that would be best suited for the client needs and purchased home owner records to use in the dialing system</li>
-          <li>Managed dialing system and adjusted calls as needed for business as well as adding and removing licenses to keep costs low</li>
+          <li>Managed dialing system and adjusted calls as needed for business as well as adding and removing licenses to control costs</li>
           <li>Created and updated all employee handbooks, drug consent forms, non-compete forms, etc.</li>
           <li>Completed employer I-9's as well as all employee documents and filed per state and federal regulation</li>
           <li>Calculated and ran payroll on a weekly basis</li>
@@ -81,6 +84,7 @@ export default function ResumePage() {
       </div>
 
       <div className='resume skills'>
+      <h2>Skills</h2>
         <ul>
           <h3>Personal</h3>
           <li>Problem Solving</li>
@@ -112,6 +116,7 @@ export default function ResumePage() {
       </div>
 
       <div className='resume education'>
+        <h2>Education</h2>
         <h3>Lambda School - October 2019 - June 2020</h3>
         <h3>University of Phoenix - 2010 - 2011</h3>
         <h3>Central Dauphin East Senior High School - 2005 - 2009</h3>
