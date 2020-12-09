@@ -1,19 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './ResumePage.scss'
 
 export default function ResumePage() {
+  const [colorToggle, setColorToggle] = useState(false);
+
+  const toggleColor = () => setColorToggle(!colorToggle);
+
   return (
-    <div className='resume-cont'>
-      <button>Toggle Printable Version</button>
+    <div className={`resume-page ${colorToggle ? 'printable' : 'container'}`}>
+      <button className='toggle-btn' onClick={toggleColor}>{colorToggle ? 'Styled Text' : 'Black & White Text'}</button>
       <h1>Amber Mohler</h1>
       <div className='resume objective'>
         <h2>Objective</h2>
+        <hr />
         <p>Experienced and accomplished individual with an extensive background in problem-solving on a daily basis and working in team-driven environments, seeking an opportunity to utilize and evolve my newly developed Full Stack Engineering skills.</p>
       </div>
     
       <div className='resume experience'>
         <h2>Experience</h2>
-
+        <hr />
         <h3>Frontend Developer, Lee McGhee Roofing</h3>
         <h3>Tampa, Florida — August 2020 - Present</h3>
         <ul>
@@ -85,6 +90,7 @@ export default function ResumePage() {
 
       <div className='resume skills'>
       <h2>Skills</h2>
+      <hr />
         <ul>
           <h3>Personal</h3>
           <li>Problem Solving</li>
@@ -117,6 +123,7 @@ export default function ResumePage() {
 
       <div className='resume education'>
         <h2>Education</h2>
+        <hr />
         <h3>Lambda School - October 2019 - June 2020</h3>
         <h3>University of Phoenix - 2010 - 2011</h3>
         <h3>Central Dauphin East Senior High School - 2005 - 2009</h3>
