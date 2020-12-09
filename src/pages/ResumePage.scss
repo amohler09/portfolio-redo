@@ -18,6 +18,10 @@
   .toggle-btn {
     margin: 5% 5% 2% 0;
     font-size: .7rem;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .resume {

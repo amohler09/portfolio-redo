@@ -4,12 +4,13 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  height: 100%;
+  justify-content: flex-start;
+  max-height: 100%;
   background-color: rgba(255, 255, 255, 0.329);
 
   & img {
     max-width: 90%;
+    padding-top: 10%;
     border-radius: 5px;
 
     &:hover {
@@ -22,10 +23,12 @@ nav {
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.329);
     padding: 20% 0 15% 5%;
+    margin: 5% auto;
     width: 100%;
     text-align: left;
     font-size: 1.2rem;
-    color: rgba(3, 46, 139, 0.671);
+    color: #fcd201b7;
+    text-shadow: 0px 0px 8px rgb(0, 19, 61);
     font-weight: 400;
     letter-spacing: 1px;
     border: none;
@@ -34,6 +37,11 @@ nav {
     overflow: hidden;
     transition: border-radius 0s;
     font-family: 'Roboto Slab';
+
+    @media(max-width: 500px) {
+      font-size: 1rem;
+      padding: 25% 0 15% 5%;
+    }
   
     &:before {
     content: "";
@@ -45,16 +53,16 @@ nav {
     width: 0;
     border-width: 12px;
     border-radius: 0 0 0 5px;
-    border-color: rgba(206, 191, 31, 0.815) rgba(206, 191, 31, 0.822) rgba(255, 255, 255, 0.598) rgba(255, 255, 255, 0.598);
+    border-color: #fcd201b7 #fcd201b7 rgba(255, 255, 255, 0.598) rgba(255, 255, 255, 0.598);
     transition: border-width .5s;
 
     }
 
     &:hover {
-      border-radius: 5px;
+      border-radius: 0px;
       transition-delay: .1s;
       background-color: rgba(3, 46, 139, 0.459);
-      border-color: rgba(206, 191, 31, 0.61) rgba(206, 191, 31, 0.61) rgba(255, 255, 255, 0.598) rgba(255, 255, 255, 0.598);
+      border-color: #fcd201b7 #fcd201b7 rgba(255, 255, 255, 0.598) rgba(255, 255, 255, 0.598);
       color: white;
 
       &:before {
