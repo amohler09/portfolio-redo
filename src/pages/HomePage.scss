@@ -8,13 +8,21 @@
   line-height: 1.25;
 
   .about-me {
-      border-radius: 10px;
-      background-color: rgba(255, 255, 255, 0.158);
-      padding: 2% 5% 4%;
+      border-radius: 5px;
+      // background-color: rgba(255, 255, 255, 0.096);
+      text-indent: 5%;
+      background-color: #2e465860;
 
+      padding: 2% 5% 4%;
 
     & p {
       margin-top: 2%;
+    }
+
+    & a {
+      text-decoration: none;
+      color: #fcd201;
+      font-weight: 700;
     }
 
   }
@@ -27,7 +35,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3%;
+    padding: 10% 3% 0 3%;
+    background-color: #2e465860;
+    border-radius: 5px;
 
     & h1 {
       font-size: 2rem;
@@ -35,6 +45,7 @@
 
     & h2 {
       font-size: 1.5rem;
+      margin: 1% auto;
     }
 
     & img {

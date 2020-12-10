@@ -6,7 +6,7 @@ nav {
   align-items: center;
   justify-content: flex-start;
   max-height: 100%;
-  background-color: rgba(255, 255, 255, 0.329);
+  background-color: rgba(255, 255, 255, 0.247);
 
   & img {
     max-width: 90%;
@@ -21,7 +21,7 @@ nav {
   .navLink {
     box-sizing: border-box;
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.329);
+    background-color: rgba(255, 255, 255, 0.096);
     padding: 20% 0 15% 5%;
     margin: 5% auto;
     width: 100%;
@@ -52,16 +52,16 @@ nav {
     box-shadow: 1px 5px 5px rgba(0,0,0,0.4);
     width: 0;
     border-width: 12px;
-    border-radius: 0 0 0 5px;
+    border-radius: 0 0 0 3px;
     border-color: #fcd201b7 #fcd201b7 rgba(255, 255, 255, 0.598) rgba(255, 255, 255, 0.598);
     transition: border-width .5s;
-
     }
 
     &:hover {
       border-radius: 0px;
       transition-delay: .1s;
-      background-color: rgba(3, 46, 139, 0.459);
+      background-color: #2e4658ab;
+      // background-color: rgba(3, 46, 139, 0.459);
       border-color: #fcd201b7 #fcd201b7 rgba(255, 255, 255, 0.598) rgba(255, 255, 255, 0.598);
       color: white;
 
@@ -69,9 +69,6 @@ nav {
         border-width: 8px;
         border-radius: 0;
       }
-    }
-
-    
-   
+    }   
   }
 }
