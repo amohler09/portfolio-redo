@@ -4,11 +4,17 @@ import './ResumePage.scss'
 export default function ResumePage() {
   const [colorToggle, setColorToggle] = useState(false);
 
-  const toggleColor = () => setColorToggle(!colorToggle);
+  const toggleColor = () =>  {
+    setColorToggle(true);
+    setTimeout(() => {
+      window.print();
+      setColorToggle(false);
+    }, 500)
+  }
 
   return (
     <div className={`resume-page ${colorToggle ? 'printable' : 'container'}`}>
-      <button className={colorToggle ? '' : 'toggled-btn'} onClick={toggleColor}>{colorToggle ? 'Back to Styled Text' : 'Black & White Text'}</button>
+      <button className={colorToggle ? 'btn-hide' : ''} onClick={toggleColor}>{colorToggle ? '' : 'Print This Page'}</button>
       <h1>Amber Mohler</h1>
       <div className='resume objective'>
         <h2>Objective</h2>

@@ -5,6 +5,7 @@
   text-align: right;
 
   & h1 {
+    margin-top: 5%;
     font-size: 2.5rem;
     text-align: center;
     text-shadow: 0px 0px 3px black,
@@ -16,23 +17,24 @@
   }
 
   & button {
-    margin: 5% 5% 5% 0;
+    margin: 5% 5% 0 0;
     font-size: .8rem;
-    border-radius: 5px;
-    padding: 1% 2%;
     outline: none;
     font-family: 'Nunito';
     font-weight: bolder;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.705);
+    background-color: #fcd201a2;
+    color: white;
+    padding: 1% 2%;
+    border-radius: 5px;
 
     &:hover {
       cursor: pointer;
     }
   }
 
-  .toggled-btn {
-    background-color: #fcd201a2;
-    color: white;
+  .btn-hide {
+    display: none;
   }
 
   .resume {
@@ -64,6 +66,7 @@
     }
 
     & hr {
+      display: block;
       background-color: #FCD401;
       width: 75%;
       height: 3px;

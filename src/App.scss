@@ -65,4 +65,18 @@ main {
 		width: 75%;
 	}
 }
+@media print {
+	.navbar {
+		display: none;
+	}
+
+	.pages {
+		margin: auto;
+
+		& h1 {
+			color: black;
+			text-shadow: none;
+		}
+	}
+}
 
