@@ -25,7 +25,7 @@ export default function ResumePage() {
       <div className='resume experience'>
         <h2>Experience</h2>
         <hr style={colorToggle ? { backgroundColor: 'black' } : null} />
-        <h3>Frontend Developer, Lee McGhee Roofing</h3>
+        <h3>Front End Developer, Lee McGhee Roofing</h3>
         <h3>Tampa, Florida — August 2020 - Present</h3>
         <ul>
           <li>Collaborated with the owners of the company to choose a color scheme and UX design for their website</li>
@@ -44,7 +44,7 @@ export default function ResumePage() {
         <ul>
           <li>Coded a Sponsor page showcasing everyone who donated to the Games</li>
           <li>Coded a Newsfeed component that allowed authorized users to create, like, and comment on real-time posts from other users, as well as being able to edit and delete their own posts (with or without pictures)</li>
-          <li>Updated existing GraphQL backend database to accommodate the frontend changes and additions</li>
+          <li>Updated existing GraphQL backend database to accommodate the front end changes and additions</li>
           <li>Utilized the UX designer’s Figma files to add mobile styling as well as general style updates using Material UI and CSS</li>
           <li>Pair programmed with other engineers to debug code</li>
         </ul>
