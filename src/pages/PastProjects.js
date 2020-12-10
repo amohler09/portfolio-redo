@@ -13,10 +13,6 @@ export default function PastProjects() {
       summary: <div>
                 <a href='http://www.leemcgheeroofing.com' target='_blank' rel='noopener noreferrer' >www.LeeMcGheeRoofing.com</a>
                 <p>Source code is private on Github and available upon request</p>
-                <ul>
-                  <li>Features & skills used</li>
-                </ul>
-
       </div>
                 
     },
@@ -28,9 +24,6 @@ export default function PastProjects() {
                 <a href='https://github.com/AngelCitySportsAdm1n/AdaptivApps-be' target='_blank' rel='noopener noreferrer' >Back End Github Repository</a>
                 <a href='https://drive.google.com/file/d/1B4JY_PIulAz9eJG2Sl_kXJMlWo-Ok91N/view' target='_blank' rel='noopener noreferrer' >Presentation Video</a>
                 <p>The deployed project site is managed by Lambda School and unfortunately no longer live ☹️</p>
-                <ul>
-                  <li>Features & skills used</li>
-                </ul>
               </div>
     },
     {
@@ -38,9 +31,6 @@ export default function PastProjects() {
       title: `This Portfolio Website!`,
       summary: <div>
                 <a href='https://github.com/amohler09/reducer-todo' target='_blank' rel='noopener noreferrer' >Github Repository</a>
-                <ul>
-                  <li>Features & skills used</li>
-                </ul>
               </div>
     },
     {
@@ -49,9 +39,6 @@ export default function PastProjects() {
       summary: <div>
                 <a href='https://connies-cookbook.vercel.app/' target='_blank' rel='noopener noreferrer' >Deployed Project Site</a>
                 <a href='https://github.com/amohler09/connies-cookbook' target='_blank' rel='noopener noreferrer' >Github Repository</a>
-                <ul>
-                  <li>Features & skills used</li>
-                </ul>
               </div>
     },
     {
@@ -60,9 +47,6 @@ export default function PastProjects() {
       summary: <div>
                 <a href='https://reducer-todo-teal.now.sh/' target='_blank' rel='noopener noreferrer' >Deployed Project Site</a>
                 <a href='https://github.com/amohler09/reducer-todo' target='_blank' rel='noopener noreferrer' >Github Repository</a>
-                <ul>
-                  <li>Features & skills used</li>
-                </ul>
               </div>
     },
   ]
