@@ -10,7 +10,7 @@
   .about-me {
       border-radius: 5px;
       // background-color: rgba(255, 255, 255, 0.096);
-      text-indent: 5%;
+      text-indent: 10%;
       background-color: #2e465860;
 
       padding: 2% 5% 4%;
@@ -24,12 +24,7 @@
       color: #fcd201;
       font-weight: 700;
     }
-
   }
-
-  
-
-
 
   .header {
     display: flex;
@@ -38,6 +33,7 @@
     padding: 10% 3% 0 3%;
     background-color: #2e465860;
     border-radius: 5px;
+    text-align: center;
 
     & h1 {
       font-size: 2rem;

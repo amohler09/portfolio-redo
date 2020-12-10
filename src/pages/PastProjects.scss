@@ -54,7 +54,7 @@
       position: absolute;
       text-align: center;
       background-color: #2e465880;
-
+      overflow: hidden;
       padding: 100% 5%;
       color: white;
       margin: auto;
@@ -99,6 +99,10 @@
                     0px 0px 2px rgba(57, 79, 97, 0.294);
         font-size: 1.25rem;
         margin-bottom: 5%;
+
+        @media(max-width: 500px) {
+          font-size: 1.1rem;
+        }
       }
 
       & a {
@@ -107,6 +111,10 @@
         text-shadow: 0px 0px 8px black;
         display: block;
         margin: 2% auto;
+
+        @media(max-width: 500px) {
+          font-size: .9rem;
+        }
 
         &:hover {
           font-weight: bold;
