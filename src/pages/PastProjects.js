@@ -20,8 +20,8 @@ export default function PastProjects() {
       imgUrl: require('../img/AdaptivApps.png'),
       title: `Lambda School Labs Project - Adaptiv Apps - Chat Feature`,
       summary: <div>
-                <a href='https://github.com/AngelCitySportsAdm1n/AdaptivApps-fe' target='_blank' rel='noopener noreferrer' >Front End Github Repository</a>
-                <a href='https://github.com/AngelCitySportsAdm1n/AdaptivApps-be' target='_blank' rel='noopener noreferrer' >Back End Github Repository</a>
+                <a href='https://github.com/Lambda-School-Labs/AdaptivApps-fe' target='_blank' rel='noopener noreferrer' >Front End Github Repository</a>
+                <a href='https://github.com/Lambda-School-Labs/AdaptivApps-be' target='_blank' rel='noopener noreferrer' >Back End Github Repository</a>
                 <a href='https://drive.google.com/file/d/1B4JY_PIulAz9eJG2Sl_kXJMlWo-Ok91N/view' target='_blank' rel='noopener noreferrer' >Presentation Video</a>
                 <p>The deployed project site is managed by Lambda School and unfortunately no longer live ☹️</p>
               </div>
