@@ -30,7 +30,7 @@ export default function PastProjects() {
       imgUrl: require('../img/Portfolio.png'),
       title: `This Portfolio Website!`,
       summary: <div>
-                <a href='https://github.com/amohler09/reducer-todo' target='_blank' rel='noopener noreferrer' >Github Repository</a>
+                <a href='https://github.com/amohler09/portfolio-redo' target='_blank' rel='noopener noreferrer' >Github Repository</a>
               </div>
     },
     {
