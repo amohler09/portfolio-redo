@@ -12,6 +12,14 @@ export default function ResumePage() {
     }, 500)
   }
 
+  const styledParagraph = (
+    <span>click <a href='https://drive.google.com/file/d/1B4JY_PIulAz9eJG2Sl_kXJMlWo-Ok91N/view' target='_blank' rel='noopener noreferrer'>here</a> to see our final group presentation video, and <a href='https://my.searchlight.ai/amohler09' target='_blank' rel='noopener noreferrer'>here</a> to see my Searchlight profile with peer reviews from my Labs team members</span>
+    )
+
+  const printParagraph = (
+    `find our final group presentation video at: 'https://drive.google.com/file/d/1B4JY_PIulAz9eJG2Sl_kXJMlWo-Ok91N/view', and my Searchlight profile at: 'https://my.searchlight.ai/amohler09'`
+  )
+
   return (
     <div className={`resume-page ${colorToggle ? 'printable' : 'container'}`}>
       <button className={colorToggle ? 'btn-hide' : ''} onClick={toggleColor}>{colorToggle ? '' : 'Print This Page'}</button>
@@ -38,7 +46,9 @@ export default function ResumePage() {
 
         <h3>Full Stack Engineer, AdaptivApps</h3>
         <h3>Remote — June 2020 - July 2020</h3>
-        <p>AdaptivApps was a stakeholder in an 8 week group project called Lambda Labs (part of Lambda School’s course). My team and I built a real-time messaging application for Angel City Sports, an AdaptivApps’ client, and then integrated the application into their current website. After completing this Labs project, I was hired by AdaptivApps to continue building upon the current codebase (click <a style={colorToggle ? { color: 'black' } : null} href='https://drive.google.com/file/d/1B4JY_PIulAz9eJG2Sl_kXJMlWo-Ok91N/view' target='_blank' rel='noopener noreferrer'>here</a> to see our final group presentation video, and <a style={colorToggle ? { color: 'black' } : null} href='https://my.searchlight.ai/amohler09' target='_blank' rel='noopener noreferrer'>here</a> to see my Searchlight profile with peer reviews from my Labs team members).</p>
+        <p>AdaptivApps was a stakeholder in an 8 week group project called Lambda Labs (part of Lambda School’s course). My team and I built a real-time messaging application for Angel City Sports, an AdaptivApps’ client, and then integrated the application into their current website. After completing this Labs project, I was hired by AdaptivApps to continue building upon the current codebase (
+        {!colorToggle ? styledParagraph : printParagraph}
+        ).</p>
         <p>Once contracted with AdaptivApps, I worked with the current engineers and UX designer on a daily basis to continue building a web application to be used for a virtual version of the Angel City Games (which are usually held in person every year). I continued to code with the  Prismatopia tech stack which included Apollo Server 2, GraphQL, Prisma, Postgres, AWS, and OAuth.</p>
         <p>Our team met every day with our supervisor to distribute tasks and get status updates for ongoing tasks. During my time with AdaptivApps, I accomplished the following:</p>
         <ul>
