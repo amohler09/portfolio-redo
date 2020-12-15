@@ -45,6 +45,10 @@
       -webkit-transform: skewY(-30deg) rotate(60deg);
       -ms-transform: skewY(-30deg) rotate(60deg);
       transform: skewY(-30deg) rotate(60deg);
+
+      &:hover {
+        opacity: .3;
+      }
     }
 
     .title {
@@ -52,8 +56,8 @@
       width: 75%;
       position: absolute;
       text-align: center;
-      background-color: #2e465880;
-      padding: 100% 5%;
+      background-color: #2e4658c9;
+      padding: 5% 3%;
       color: white;
       margin: auto;
 
@@ -64,7 +68,6 @@
         @media(max-width: 500px) {
           font-size: .75rem;
           display: block;
-          padding: 5% 3%;
         }
       }
     }

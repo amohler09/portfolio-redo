@@ -60,7 +60,7 @@ export default function PastProjects() {
             <div 
               className='project-cont' onClick={detailToggle(i)}>
               <img src={project.imgUrl} alt={`${project.title} project`} />
-              <h2 className='title'>{showDetails !== i && project.title}</h2>
+              <h2 style={showDetails === i ? { padding: 0 } : null} className='title'>{showDetails !== i && project.title}</h2>
             </div>
             <div onClick={detailToggle(i)} className={showDetails === i ? 'details' : 'detail-hide' }>
               <h2>{project.title}</h2>
